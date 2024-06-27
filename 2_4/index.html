@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>値の取得</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+  function checkNumber(){
+    // ここに処理を記述
+    var input = document.getElementById('value').value; 
+    var number = parseInt(input); 
+    alert(input);
+  };
+
+  </script>
+</head>
+<body>
+  <label for="value"></label>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン" onclick="checkNumber()">
+</body>
+</html>
