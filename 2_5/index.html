@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>if文</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+  function changeColor() {
+    // ここに処理を記述
+    
+    var number = parseInt(document.getElementById('numberInput').value);
+    var box = document.getElementById('box');
+    if(number==1){box.style.backgroundColor = 'red';}
+    else if(number===2){box.style.backgroundColor = 'lime';}
+    else if(number==3){box.style.backgroundColor = 'blue';}
+  }
+  </script>
+</head>
+<body>
+  <label for="numberInput"></label>
+  <input type="text" id="numberInput">
+  <input type="button" value="ボタン" onclick="changeColor()">
+  <div id="box">
+  </div><!-- button -->
+</body>
+</html>
